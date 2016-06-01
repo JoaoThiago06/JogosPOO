@@ -1,2 +1,0 @@
-# JogosPOO
-Respostas das Atividadess
