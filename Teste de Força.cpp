@@ -18,9 +18,9 @@ int main()
 
 	cout << "\nDigite o nome do jogador 2:" << endl;
 	cin >> jog2;
-	
+	//função
 	while (sair == false) {
-
+		//desenho dos personagens
 		cout << " o                    o" << endl;
 		cout << ".T./                \\.T." << endl;
 		cout << " ^                    ^" << endl;
@@ -86,7 +86,7 @@ int main()
 
 
 	cout << "Fim de jogo!" << endl;
-
+	//condição para saber quem ganhou
 	if (vida1 > 0) cout << jog1 << "Venceu!" << endl;
 	else if (vida2 > 0) cout << jog2 << "Venceu!" << endl;
 	else cout << "Os dois perderam!" << endl;
