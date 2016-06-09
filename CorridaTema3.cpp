@@ -13,12 +13,12 @@
     string competidor2; //variável string para os competidores
  	int distancia1 = 0; //quantidade do espaço inicial
     int distancia2 = 0; //quantidade do espaço inicial
+    int acabar = 60;
     int total_espacos = 60;
     
     //Mostrar na tela o letreiro
     cout << "Corrida do If" << endl;
-    
- 	cout << "Digite o nome do primeiro competidor:" << endl; //mostra na tela, e depois digitar o que foi solicitado 
+    cout << "Digite o nome do primeiro competidor:" << endl; //mostra na tela, e depois digitar o que foi solicitado 
  	getline (cin, competidor1); //salvar o que foi digitado
     //mesma coisa em baixo
  	cout << "Digite o nome do segundo competidor:" << endl;
@@ -33,7 +33,6 @@
 		total_espacos = rand() % 3 + 1;
 		distancia1 = distancia2 + total_espacos;
 
-        srand((int)time(0));
         //Competidor 2
 		total_espacos = rand() % 3 + 1;
 		distancia2 = distancia2 + total_espacos;
@@ -78,8 +77,8 @@
 
 	}
     //para saber que ganhou a corrida
-	if (distancia1 >= 60) cout << competidor1 << " Você ganhou XD" << endl;
-	else if (distancia2 >= 60) cout << competidor2 << " Você ganhou XD" << endl;
+	if (acabar >= 60) cout << competidor1 << " Você ganhou XD" << endl;
+	else if (acabar >= 60) cout << competidor2 << " Você ganhou XD" << endl;
 	else cout << "Empate" << endl;	
 	
 	return 0;
