@@ -13,7 +13,7 @@
     string competidor2; //variável string para os competidores
  	int distancia1 = 0; //quantidade do espaço inicial
     int distancia2 = 0; //quantidade do espaço inicial
-    int acabar = 60;
+    int acabar;
     int total_espacos = 60;
     
     //Mostrar na tela o letreiro
