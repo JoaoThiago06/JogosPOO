@@ -14,24 +14,24 @@
  	int distancia1 = 0; //quantidade do espaço inicial
     int distancia2 = 0; //quantidade do espaço inicial
     int acabar;
-    int total_espacos = 60;
     
     //Mostrar na tela o letreiro
     cout << "Corrida do If" << endl;
+    
     cout << "Digite o nome do primeiro competidor:" << endl; //mostra na tela, e depois digitar o que foi solicitado 
- 	getline (cin, competidor1); //salvar o que foi digitado
+ 	cin >> competidor1; //salvar o que foi digitado
     //mesma coisa em baixo
  	cout << "Digite o nome do segundo competidor:" << endl;
- 	getline (cin, competidor2);
+    cin >> competidor2;
  
     while (sair==false)
  	{
-
+        int total_espacos = 60;
 		//calculo para gerar um numero aleatório
 		srand((int)time(0));
 		//Competidor 1
 		total_espacos = rand() % 3 + 1;
-		distancia1 = distancia2 + total_espacos;
+		distancia1 = distancia1 + total_espacos;
 
         //Competidor 2
 		total_espacos = rand() % 3 + 1;
